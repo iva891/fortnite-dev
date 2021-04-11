@@ -11,3 +11,143 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0 2rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  min-height: calc(100vh - 54px - 60px);
+  padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.card-content {
+  position: relative;
+  display: flex;
+	flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-price {
+  margin-top: auto;
+}
+
+.collection-item {
+  display: flex;
+  align-items: center;
+}
+
+.back-block {
+  display: flex;
+  align-items: center;
+}
+
+.back-block__text {
+  margin-left: 10px;
+}
+
+.title-item {
+  margin-right: auto;
+}
+
+.success-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-top: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 0.3s;
+}
+
+.success-block h4 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.success-block-show {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.cart-price {
+  font-weight: 700;
+}
+
+.collection i {
+  cursor: pointer;
+}
+
+.collection i:not(.dis-button):hover {
+  transform: scale(1.1);
+  transition: transform 0.1s;
+}
+
+.collection i.dis-button {
+  cursor: default;
+}
+
+.value-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20%;
+}
+
+.value-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.value-quantity {
+  min-width: 50px;
+  text-align: center;
+}
+
+.result-cart {
+  margin-right: 30px;
+  text-align: right;
+}
+
+.result-price {
+  font-weight: 700;
+}
+
+.cart-btns  {
+  display: flex;
+  justify-content: space-around;
+}
+
+.collection .collection-item.avatar .secondary-content {
+  position: static;
+}
+
+.dis-button {
+  cursor: default;
+}
